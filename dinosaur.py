@@ -1,7 +1,8 @@
 class Dinosaur:
     def __init__(self, name, attack_power):
-        name=""
-        attack_power=int
-        health=int
+        self.dino_name=name
+        self.dino_attack_power=attack_power
+        self.dino_health=""
+
     def attack(self, robot):
         pass
