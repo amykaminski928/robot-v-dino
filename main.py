@@ -6,8 +6,11 @@ from battlefield import Battlefield
 available_weapon=Weapon("Fangs", 5)
 #instantiate robot
 active_robot=Robot("Chewy")
-robot_health=25
 active_weapon=available_weapon
 
+#instantiate Dinosaur
+active_dino=Dinosaur("Blue", 10)
 
 
+#dino attack
+active_dino.attack(active_robot)
