@@ -11,7 +11,3 @@ active_robot=Robot("Chewy")
 #instantiate Dinosaur
 active_dino=Dinosaur("Blue", 10)
 
-
-#dino attack
-active_dino.attack(active_robot)
-active_robot.attack(active_dino)
