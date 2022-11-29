@@ -3,8 +3,8 @@ from weapon import Weapon
 class Robot:
     def __init__(self, name):
         self.robot_name=name
-        self.robot_health=25
-        self.active_weapon=Weapon('fangs', 5)
+        self.robot_health=50
+        self.active_weapon=Weapon("Fangs", 5)
 
     def attack(self, dinosaur):
         dinosaur.dino_health-=self.active_weapon.weapon_attack_power
