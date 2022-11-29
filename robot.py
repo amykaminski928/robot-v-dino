@@ -7,6 +7,8 @@ class Robot:
         self.active_weapon=Weapon("Fangs", 5)
 
     def attack(self, dinosaur):
-        dinosaur.dino_health-=self.active_weapon.weapon_attack_power
-        print(f'{dinosaur.dino_name} has {dinosaur.dino_health} health remaining.')
+        if self.robot_health > 0:
+            print("Robot attacks.")
+            dinosaur.dino_health-=self.active_weapon.weapon_attack_power
+            print(f'{dinosaur.dino_name} has {dinosaur.dino_health} health remaining.')
         

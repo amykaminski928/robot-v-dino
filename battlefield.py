@@ -18,16 +18,14 @@ class Battlefield:
     def battle_phase(self):
         #while Battlefield.active_robot > 0 or Dinosaur.dino_health > 0:
         #dinosaur.dino_health > 0 or Dinosaur.attack.robot.robot_health > 0:
-        while True:
-            if self.active_dinosaur.dino_health > 0:
-                print("Robot attacks.")
+        
+        while self.active_dinosaur.dino_health > 0 and self.active_robot.robot_health > 0:
+                
                 self.active_robot.attack(self.active_dinosaur)
-            elif self.active_robot.robot_health > 0:
-        #.dino_health > 0 or Robot.robot_health > 0:
-                print("Dinosaur retaliates.")
+                
                 self.active_dinosaur.attack(self.active_robot)
-            elif self.active_dinosaur.dino_health or self.active_robot.robot_health <= 0:
-                break
+            #elif self.active_dinosaur.dino_health or self.active_robot.robot_health <= 0:
+                
 
     def display_winner(self):
         if self.active_robot.robot_health <= 0:
